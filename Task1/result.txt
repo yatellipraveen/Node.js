@@ -1,0 +1,4 @@
+demo-dir\file1.txt 6916c4f6dad540c86c9acd52022bbb892386dfc8 4661e0fe2dba3cc72014e0947bb37fd5 
+demo-dir\dir_two\file3.md ba0ed9d36df65fd031d23ddab295fcb81a0a0173 482b2a7d6ba371610f36e08049cf3f51 
+demo-dir\dir_two\file2.txt 4536211677d8b100635eadde500b1a111b1cca35 280d98cf947032f05cf7de771e882c82 
+demo-dir\dir_two\dir_three\file4.txt b9fbc9bcfde327b905d00ccbfc67a5a2f93f4460 481864b1bd162504d3dd9ca618a0e761 
