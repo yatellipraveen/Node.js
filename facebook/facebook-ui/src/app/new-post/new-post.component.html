@@ -1,0 +1,22 @@
+<form [formGroup]="newPost" (ngSubmit)="onPost()">
+  <div class="form-group">
+    <input
+      type="text"
+      name="header"
+      placeholder="Enter post header"
+      class="form-control"
+      formControlName="header"
+    />
+  </div>
+  <div class="form-group">
+    <textarea
+      name="body"
+      cols="30"
+      rows="10"
+      class="form-control"
+      placeholder="Enter text here"
+      formControlName="body"
+    ></textarea>
+  </div>
+  <button class="btn btn-primary" type="submit" [disabled]="!newPost.valid">submit</button>
+</form>

@@ -1,0 +1,21 @@
+<div class="container ">
+  <div class="row justify-content-end mb-3">
+    <Button class="btn btn-primary" (click)="toggleForm()">New Post</Button>
+  </div>
+  <div *ngIf="formToggle" class="mb-3">
+    
+<app-new-post (addedNewPost)="onNewPost()"></app-new-post>
+  </div>
+</div>
+<div *ngFor="let post of posts">
+  <div class="card mb-3">
+    <div class="card-body">
+      <h5 class="card-title">{{post.header}}</h5>
+      <hr />
+      <p>
+        {{post.body}}
+      </p>
+        <p class="font-italic"> Author : {{post.author}} </p>
+    </div>
+  </div>
+</div>

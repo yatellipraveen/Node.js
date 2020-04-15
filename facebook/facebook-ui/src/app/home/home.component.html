@@ -1,4 +1,9 @@
 <div class="card-body">
-  <h5 class="card-title text-center">WELCOME</h5>
-  <button class="btn btn-info" routerLink="/login">login</button>
+  <h1 class="card-title">WELCOME</h1>
+  <button *ngIf="!loggedin" class="btn btn-info" routerLink="/login">
+    login
+  </button>
+  <button *ngIf="loggedin" class="btn btn-success" routerLink="/wallpage">
+    Posts
+  </button>
 </div>
