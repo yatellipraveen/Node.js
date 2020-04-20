@@ -1,0 +1,14 @@
+<nav
+  class="navbar navbar-expand-sm navbar-light bg-info justify-content-between"
+>
+  <a href="" class="navbar-brand" routerLink="/">facebook</a>
+  <div *ngIf="loggedin"class="navbar-nav">
+    <a class="nav-item nav-link text-dark" >{{email}}</a>
+    <a class="nav-item nav-link text-dark" (click)="logout()" routerLink="/login">signout</a>
+  </div>
+</nav>
+
+<div class="container col-md-6 mt-5"
+>
+  <router-outlet></router-outlet>
+</div>
